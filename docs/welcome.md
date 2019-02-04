@@ -1,3 +1,5 @@
+Welcome to the help file of OptimumDynamics.
+
 Thank you for purchasing OptimumDynamics, the newest benchmark in computational vehicle dynamic analysis software. This help file contains information regarding the features, functions and general usage of OptimumDynamics.
 
 #Feedback
