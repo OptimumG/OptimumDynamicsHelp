@@ -1,3 +1,11 @@
+---
+title: Welcome
+summary: 
+authors:
+    - Paulo Yamagata
+    - Connor Kennard
+date: 2019-02-04
+---
 
 Thank you for purchasing OptimumDynamics, the newest benchmark in computational vehicle dynamic analysis software. This help file contains information regarding the features, functions and general usage of OptimumDynamics.
 

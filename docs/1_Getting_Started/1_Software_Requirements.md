@@ -1,3 +1,12 @@
+---
+title: Software Requirements
+summary: 
+authors:
+    - Paulo Yamagata
+    - Connor Kennard
+date: 2019-02-04
+---
+
 #Software Requirements
 Section|	Minimum	|Recommended
 -|-|-
