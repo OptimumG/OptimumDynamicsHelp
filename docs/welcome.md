@@ -6,10 +6,10 @@ OptimumDynamics is a continually evolving program and we give high regard to any
 #Document Overview
 The help file can be navigated by clicking on the various section links in the document. At the bottom of each sub-section there is also a link that will bring you back to the beginning of that section. If you are new to OptimumDynamics then you should start by reading through the getting started guide.
 
-1. [Getting Started]("1 Getting Started/0 Getting Started.md")
-    * [Software Requirements]("1 Getting Started/1 Software Requirements.md")
-    * [Installation]("1 Getting Started/2 Installation.md")
-2. [Detailed Guide]("2 Detailed Guide/0 Detailed Guide.md")
-    * [Understanding Vehicle Design]("2 Detailed Guide/1 Understanding Vehicle Design.md")
-3. [Additional Information]("3 Additional Information/0 Additional Information.md")
-    * [Hot Keys and File Types]("3 Additional Information/1 Hot Keys and File Types.md")
+1. Getting Started
+    * [Software Requirements](1_Getting_Started/1_Software_Requirements.md)
+    * [Installation](1_Getting_Started/2_Installation.md)
+2. Detailed Guide
+    * [Understanding Vehicle Design](2_Detailed_Guide/1_Understanding_Vehicle_Design.md)
+3. Additional Information
+    * [Hot Keys and File Types](3_Additional_Information/1_Hot_Keys_and_File_Types.md)
