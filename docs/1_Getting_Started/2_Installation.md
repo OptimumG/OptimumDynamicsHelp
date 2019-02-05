@@ -1,3 +1,8 @@
+---
+title: Installation
+
+---
+
 The following procedure should be undertaken to successfully install OptimumDynamics:
 
 1. __Run__ the OptimumDynamics __Setup__ installer.  Ensure that you run the __setup.exe__ file and run as an administrator to ensure all components are installed successfully.
