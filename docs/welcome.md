@@ -21,4 +21,4 @@ The help file can be navigated by clicking on the various section links in the d
     * [Hot Keys and File Types](3_Additional_Information/1_Hot_Keys_and_File_Types.md)
     * [Importing and Exporting Data](3_Additional_Information/2_Importing_Exporting_Data.md)
     * [Starting Parameters](3_Additional_Information/3_Starting_Parameters.md)
-    * [FAQ](3_Additional_Information/4_FAQ.md)
+    * [FAQ](3_Additional_Information/5_FAQ.md)
