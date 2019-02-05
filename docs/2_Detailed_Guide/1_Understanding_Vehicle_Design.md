@@ -407,24 +407,116 @@ __Viscous Coefficient__|Ratio of slip between the left and right wheels required
 
 #Simple Brakes
 
+The braking system of the vehicle can be defined simply by the location of the brakes and the distribution of braking force front to rear. The braking distribution is assumed to be constant in this model and does not depend on the hydraulic layout of the actual braking system.
 
+![brakes ui](../img/brakesui.png)
+
+There are options for either brakes mounted inboard of the wheel axle or mounted outboard (most traditional configurations are outboard).  The maximum front braking torque capable for the system is also requested.  This can be solved by finding the maximum braking force at the front wheels followed by the torque being applied to the wheels.  The front braking force can be found using the following equation:
+
+![brake force eq](../img/brakeforceeq.PNG)
+
+Where “B” is the braking force, “a” is the maximum deceleration of the vehicle in g, “d” is the brake distribution of the vehicle, “M” is the mass of the vehicle, and “g” is the acceleration due to gravity.  The torque can now be calculated using this equation:
+
+![brake torque eq](../img/braketorqueeq.PNG)
+
+Where “T” is the front braking torque and “R” is the radius of the tire.
+
+__Input Name__|__Description__
+-|-
+__Brake Location__|You can modify whether you have inboard or outboard brakes. 
+__Brake Distribution__|This value represents the braking force distribution. For example, a value of 70% would indicate that 70% of the braking force comes from the front wheels and 30% comes from the rear wheels. Note: This value may not be the same as the brake pressure distribution.
+__Maximum Torque Reference Front__|The maximum braking torque that can be provided to the front wheels
 
 #Inboard Drivetrian
 
+This component describes the drive layout of the vehicle. Three options are currently available including rear-wheel drive (RWD) or front-wheel drive (FWD).
 
+![drivetrain ui](../img/drivetrainui.png)
+
+__Input Name__|__Description__
+-|-
+__Drive Type__|FWD – Front Wheel Drive: 100% of the drive torque goes to the front wheels<br>RWD – Rear Wheel Drive: 100% of the drive torque goes to the rear wheels
+__Drive Application__|Choose between having an inboard (CV Joint, as used in an independent suspension) or outboard drivetrain (as used in a solid rear axle)
 
 #Combustion Engine
 
+An engine can be added to the simulation model to study the effect of the throttle position the vehicle. The combustion engine is the simplest engine model you can create, and is defined by a set of engine speeds and engine torques at full throttle. This data is often determined from engine dyno testing.
 
+![2D engine](../img/2dengine.png)
+
+__Input Name__|__Description__
+-|-
+__Engine Power Scaling__|This scaling factor increases or decreases the power over the entire RPM range
 
 #3D Engine Map
 
+A 3D engine map is an engine torque map with respect to engine speed and throttle position. This data is often determined from engine dyno testing.
 
+![3D Engine](../img/3dengine.png)
 
-#Import Engine Data
+__Input Name__|__Description__
+-|-
+__Engine Style__|You may choose an engine style. (This is used for the 3D Visualization) 
+__Location__|You can choose an engine location. (This is used for the 3D Visualization)
+__Engine Power Scaling__|This scaling factor increases or decreases the power over the entire RPM range
 
+To simplify the data input process, data for a torque curve can be imported into the software.  To do so, go to the engine button and select import.
 
+![import engine](../img/importengine.png)
+
+Within the import window, input the data sets that correspond to the throttle percentage, the RPM the engine was recorded at, and the resultant torque for a given RPM and throttle percentage.  Without any of the three parameters, OptimumDynamics cannot create the engine map.
 
 #Constant Reduction Gearbox
 
+The constant reduction gearbox lets you create a gearbox for engine that contains a series of fixed gear ratios, much like a sequential gearbox.  You can also define a final drive gear ratio that affects all the gears. If the vehicle is a single speed (e.g. an electric motor or a sprint car), just apply the final drive and a 1:1 ratio for the input data.  OptimumDynamics does not require a minimum number of gears to implement the gearbox.
+
+![gearbox](../img/gearbox.png)
+
+__Input Name__|__Description__
+-|-
+__Gear Ratio__|The main gear ratio 
+
+#Simple Aerodynamics
+
+The option to define the vehicle aerodynamics is possible in OptimumDynamics. This is important for most vehicles as it influences the top speed and the overall vehicle performance. A simple aerodynamics map is a system where the effects of ride height on the system are either unknown or can be considered negligible. For the simple aerodynamic model, the downforce and drag are calculated using the following formulae:
+
+![Aero Eq](../img/aeroeq.PNG)
+
+Where ρ_air is the density of air, v is the vehicle speed, A is the frontal area, C_downforce is the coefficient of downforce and C_drag is the drag coefficient. You will need to determine a value for the frontal area of your vehicle and the coefficients for drag and downforce. 
+
+You can view the simple aerodynamic map in the adjacent window to determine if the values are correct. Also note that the aerodynamic balance includes the effect of both the downforce and drag forces. Therefore, when specifying downforce coefficients or downforce balance, remember that the load transfer effect of the drag is included in this value and is not calculated separately.
+
+Note that the frontal area can also be used as any reference area or set to 1 provided that the coefficients are set with this assumption considered.
+
+![aeroplot](../img/aeroplot.png)
+
+__Input Name__|__Description__
+-|-
+__Toggle Inputs__|You may choose to enter the information as either:<br>*Downforce – Balance – Efficiency (DBE)*<br>*Downforce – Drag – Balance (DDB)*<br>*Front Downforce – Rear Downforce – Drag (FRD)*
+__Density__|The density of air. The default value is 1.2255 kg/m3
+__Frontal Area__|The frontal area of the vehicle. Alternately this is a reference area for the coefficients used.
+__Downforce Coefficient<br>[DDE or DDD selected]__|This value represents the downforce coefficient. A positive number results in downforce
+__Downforce Balance Front<br>[DDE or DDD selected]__|The percentage of the total downforce (including the effect of the drag force) that is reacted by the front axle
+__Drag Efficiency<br>[DDE or DDD selected]__|This is the percentage ratio of downforce over drag force
+__Drag Coefficient<br>[DDD or FRD selected]__|This value represents the drag coefficient. A positive value results in a drag force
+__Front Downforce Coefficient<br>[FRD selected]__|The downforce coefficient of the aerodynamics that is reacted by the front axle of the vehicle (including the effect of the drag force)
+__Rear Downforce Coefficient<br>[FRD selected]__|The downforce coefficient of the aerodynamics that is reacted by the rear axle of the vehicle (including the effect of the drag force)
+
+#Aerodynamics Map
+
+The vehicle aerodynamics can also be described by defining the downforce, drag and aerodynamic balance as a function of front and rear vehicle ride height. All three parameters should be entered for each combination of front and rear ride height. 
+
+Offsets can also be defined for each of the parameters if required. This removes the need to adjust each data point individually or having to import a new dataset. The aeromap should be defined for the entire possible range of ride heights as values are not extrapolated in the simulation.
+
+__Input Name__|__Description__
+-|-
+__Required Inputs__|This is how you change between viewing and entering data for downforce, drag and aerodynamic distribution.
+__Air Density__|The density of air. The default value is 1.2255 kg/m3
+__Frontal Area__|The frontal area of the vehicle. Alternately this is a reference area for the coefficients used.
+__Offset Amount__|Offsets every data point by the given amount
+__Offset Multiply__|Multiplies every data point by the given value.
+
+You can view the aero map as a 3D surface plot. You can either do this from the ‘Input Data’ tab or from the ‘Output Data’ tab. By selecting the different checkboxes, you can easily visualize the resulting aero map from within OptimumDynamics.
+
+![3D Aero](../img/3daero.png)
 
