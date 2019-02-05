@@ -196,69 +196,214 @@ __Compressed Length__|The minimum length of the spring when fully compressed. Th
 
 ![nonlinear spring](../img/nonlinearspringdata.png)
 
+Spring data can also be imported using a .csv or an Excel file.  The data inputs will remain the same, though an interface to select the data will come up, allowing you to input the data for the displacement and the data for the spring force.  Additionally, the table can be created by copying data from an Excel sheet or table and pasted into the input window. Copy the columns that correspond to the displacement and force, then select the first row in the table in OptimumDynamics and paste the data.
+
+![spring import](../img/springimport.png)
+
 #Linear Torsion Bar
 
+An alternate to a linear spring, a linear torsion bar can be defined as the springing element. This is accessed through the spring tab in the command ribbon. A linear torsion bar assumes a constant torsional spring rate. The torsion bar displacement is zero when the suspension is in full droop.
+
+Note that these are not the same components as used for the Anti-Roll Bars.  Also note that torsion bars and coil springs are not interchangeable if using anything other than a linear suspension.  Both can only be used where expected in the suspension design.
+
+__Input Name__|__Description__
+-|-
+__Stiffness__|The torsional stiffness of the bar
+__Preload__|The preload of the torsion bar
 
 
 #Non-linear Torsion Bar
 
-
+A non-linear torsion bar model is defined by a set of user defined data points. The data describes the torque response of the bar with angular displacement. Data should be added that covers the entire possible operating range. This data is often determined from physical testing.  Inputs can be created using either an angular displacement, Additionally, as with the linear spring, the table can be created by copying data from an Excel sheet or table and pasted into the input window.
 
 #Linear Bump Stops
 
+Bump stops are a common component seen on dampers.  They are used to limit the maximum amount of suspension movement by increasing the effective spring rate when engaged. Bump stops can also be a detriment to a driver as they can cause a rapid increase in elastic load transfer, causing the vehicle to become unstable. There are three ways in which bump stop models can be handled in OptimumDynamics. 
 
+The first option is to simply leave the bump stop undefined, this is ok if there are either no bump stops in the system or if they do not engage during use. 
+The second option is to choose a linear bump stop. This works in an identical way to a linear spring where a constant spring rate is assumed over the defined operating range of the bump stop.
+
+__Input Name__|__Description__
+-|-
+__Stiffness__|The stiffness of the bump stop
+__Free Length__|The length of the bump stop under no load
+__Compressed Length__|The minimum length of the bump stop when it is fully compressed. The bump stop can no longer be physically displaced
 
 #Non-linear Bump Stops
 
+A non-linear bump stop is defined by a set of data points describing the force response with displacement from the bump stop free length. Data should be input that covers the entire possible operating range of the bump stop (from its free length to its compressed length).  Additionally, the table can be created by copying data from an Excel sheet or table and pasted into the input window. These curves are often determined from physical testing.
+
+__Input Name__|__Description__
+__Free Length__|The length of the bump stop under no load
+__Compressed Length__|The minimum length of the bump stop when fully compressed. The bump stop can no longer be physically displaced
 
 
 #Coilover
 
+This is an assembly of a previously defined spring and/or bump stop model. In addition to defining the spring and/or bump stop components you will also need to define the corresponding gap or preload. 
+
+Both the gap and preload are defined with the coilover unattached from the vehicle and fully extended. If the spring rattles loose in the coilover then there will be a positive spring gap. The spring gap describes the distance that the coilover would have to compress before it is in contact with the spring.  
+
+If the spring does not rattle loose then there is some static preload and there will be a negative spring gap, you should input a negative value that describes how far the spring is compressed from its free length. If the spring gap is negative, then this can also be described by a positive preload force. The preload force corresponds to the force required to compress the spring from its free length to its current length. A similar process is taken for the bump stop. Also note that you cannot define a gap and a preload force as these are equivalent measurements.
+
+It is important that the coilover geometry is also included. This includes the eye to eye length of the coilover when fully extended and the eye to eye length when fully compressed. The free length of the coilover needs to be greater than the free length of the spring you have chosen to install.
+
+The spring and bump stop are considered as springs in parallel when engaged. The engagement point of the bump stop can be defined using the bump stop gap. A negative gap indicates a preload on the bump stop. You can see the overall response of the system in the resulting force vs displacement chart for the coilover.
+
+![coilover](../img/coiloverimg.png)
+
+__Input Name__|__Description__
+-|-
+__Coilover Type__|The type of coilover:<br>*Compression* – generates force when compressed<br>*Tension* – generates force when extended
+__Spring__|The spring model to be used in the coilover
+__Spring Gap__|The distance between the spring and the coilover mount at full droop. If the spring is loose in the coilover then there is a positive spring gap. If there is static preload on the spring, then this should be entered as a negative spring gap.
+__Spring Preload__|This value represents the preload of the spring. By adjusting this value, the spring gap will automatically be set. The preload displacement that is induced by this force cannot exceed the maximum displacement of the spring or coilover.
+__Bump Stop__|The bump stop model to be used in the coilover
+__Bump Stop Gap__|The distance between the bump stop and the coilover mount at full droop. This is normally a positive value to indicate that the damper is not preloaded so far as to be touching the bump stop. A negative value here results in a bump stop preload.
+__Bump Stop Preload__|This value represents the preload of the bump stop. By adjusting this value the bump stop gap will automatically be set. The preload displacement that is induced by this force cannot exceed the maximum displacement of the bump stop.
+__Extended Length__|The maximum length of the damper (eye to eye) when fully extended. At this point the coilover can no longer be physically extended.
+__Compressed Length__|The minimum length of the coilover when fully compressed. At this point the coilover can no longer be physically displaced.
 
 
 #Linear Anti-Roll Bar
 
+Excluding select off road vehicles and some design constrained vehicles, most vehicles have a mechanism to react the roll forces of a vehicle. The anti-roll bar (ARB) on the vehicle only provides suspension stiffness during vehicle roll and has no effect during heave motion. A linear ARB is assumed to have a constant spring rate over its range of travel. The stiffness of the ARB is taken at the tip of the ARB level arm. This can be calculated knowing the material properties and geometry or it can be evaluated experimentally.
 
+![linear ARB](../img/lineararb.png)
+
+__Input Name__|__Description__
+-|-
+__Stiffness__|The linear stiffness of the tip of the ARB lever arm
 
 #Non Linear Anti-Roll Bar
 
+A non-linear ARB is defined by a set of data points describing the force response with displacement. Data should be input that covers the entire possible operating range of the ARB. These curves are often determined from physical testing. The non-linear ARB can be especially useful if using a non-elastic material for the anti-roll element, be it polymer or composite or a non-elastic metallic component.  A non-linear anti-roll can be especially useful for highly aerodynamic sensitive vehicles that require a progressive roll gradient in order to reduce the losses in aerodynamic forces due to a high roll angle.
 
+__Input Name__|__Description__
+-|-
+__Toggle Inputs__|Toggle Inputs. You may choose to enter the Non-Linear information based on the following:<br>*Displacement* – Force: The force response of the ARB as a function of linear displacement<br>*Angle – Force*: The force response of the ARB as a function of angular rotation. You must also enter the level arm length when using this option
+__Lever Arm Length__|The length of the ARB arm. This is the perpendicular distance from the end of the ARB to the ARB pivot axis. This is used to calculate the relation between angular and linear displacement of the ARB.
 
 #Linear Suspension
 
+Suspension definition is important as it describes the layout and motion of the vehicle. When defining a linear model the hard points and actuation of the suspension is not known and motions are instead defined using linear models. Different front and rear suspensions will need to be made. The linear suspension model can be beneficial for determining high-level reactions of the suspension design before spending too much time working with a complex model.
 
+__Input Name__|__Description__
+-|-
+__Symmetry__|The suspension is assumed to be symmetric when this is checked. If the suspension is asymmetric then parameters will need to be defined for both corners of the suspension
+__Track__|The lateral distance between the tire contact patches
+__Tire__|The tire model to be used in the suspension
+__Static Camber__|The static camber angle. A negative value indicates that the top of the tire is leaning inwards towards the chassis centerline.
+__Camber Gain__|The camber change due to suspension movement. A negative value indicates that the camber will become more negative when the vehicle is pushed down.
+__Static Toe__|The static toe angle. A negative number indicates toe-in.
+__Toe Gain__|Change in toe due to suspension movement. A negative value indicates that the toe angle will change towards more toe-in when the vehicle is pushed down.
+__Coilover__|The coilover model to be used in the suspension object
+__Coilover Motion Ratio__|This value represents the ratio wheel motion/coilover motion
+__ARB (Optional)__|The ARB model to be used in the suspension
+__ARB Motion Ratio (Optional)__|This value represents the ratio wheel motion/ ARB motion
+__Center Element (Optional)__|Select a previously defined center element model
+__Center Element Motion Ratio (Optional)__|This value represents the ratio of wheel motion/center element motion
+__Static Roll Center Height__|This is the height of the roll center as referenced from the vehicle ground plane (the vehicle is stationary on the ground).
+__Anti-Effect Percentage__|This value represents the percentage of longitudinal weight transfer that will be geometric. The higher this value is the less suspension travel there will be.
+__Steering – Wheel Displacement__|This value is used to determine how far the wheel travels up or down when the steering wheel is turned. A positive value indicates that the inside wheel center will move down
+__Steering Ratio__|This is the ratio of the steering angle to the wheel angle (steering angle/wheel angle)
 
 #Non Linear Suspension
 
+If you are familiar with OptimumKinematics then you should have no issues with designing or importing a 3D geometric suspension design. For those unfamiliar with the process the following sections describe in additional detail what is required.
+A non-linear model can be described geometrically if you know the 3D location of your vehicles hard points and actuation. This requires that you specify the [X, Y, Z] locations and orientation of every suspension component. You will also need to select your Tires, Coilovers and optionally an ARB and Center Element if applicable. 
+It is also possible to directly import an existing OptimumKinematics file into the project. When using this method, the suspension parameters are found by running a full kinematic analysis of the suspension layout.
+
+![Example Non Linear](../img/exnonlinearsus.png)
+
+In the non-linear suspension you can also specify the lookup grid for the kinematics. When a simulation is run with a non-linear suspension the vehicle is first operated geometrically and a lookup table is generated. The grid defines the range for this table and the number of steps. During an actual simulation this lookup table is used for determining new camber, toe etc.… If you choose to manually specify the grid then you must ensure that the defined grid will cover the maximum range of suspension motion. You may get an extrapolation or failure error if this is not done.
+
+__Input Name__|__Description__
+-|-
+__Grid Values – Automatic__|When set to true the range of motion of the suspension is automatically calculated. If set to false it is up to you to determine the useable range of motion of the suspension.
+__Negative Steering<br>[Grid Values – Manual]__|The maximum negative steering allowed by the suspension
+__Positive Steering<br>[Grid Values – Manual]__|The maximum positive steering allowed by the suspension
+__Number of Steering Steps<br>[Grid Values – Manual]__|The number of steering steps to calculate between the maximum and minimum set
+__Wheel Displacement<br>[Grid Values – Manual]__|The maximum positive wheel displacement allowed from the full droop condition (which is determined by coilover free length).
+__Number of Wheel Displacement<br>[Grid Values – Manual]__|The number of wheel displacement steps to calculate
+__Rack Ratio__|The steering rack displacement / one steering revolution
+
+####*Creating a Suspension*
+
+After a non-linear suspension has been added to the project you will be presented with the following screen that is used to define the suspension type that is being created.
+
+![new suspension](../img/newnonlinearsus.png)
+
+OptimumKinematics has many premade front and rear suspension setups to choose from. Within the suspension setups you maintain the ability to modify any of the existing setups or create a suspension setup from scratch. The following options are available to specify the suspension type and combination when made from scratch.  Note that currently OptimumDynamics does not support dependent suspension types in the analysis.
+
+__Input Name__|__Description__
+-|-	
+__Axle__|Is the suspension design for the front or rear of the vehicle?
+__Geometry__|The type of suspension geometry, including<br>Double A-Arm<br>Five Links<br>MacPherson Strut<br>MacPherson Independent Arms<br>MacPherson Pivot Arm __[Front Only]__<br>Multilink __[Rear Only]__<br>Semi-Trailing Arm __[Rear Only]__
+__Steering__|The type of steering system __[Front Only]__<br>Rack and Pinion<br>Recirculating Ball<br>Tierod Attachment	The attachment point for the tierod __[Rear Only]__<br>Chassis<br>Lower A-Arm<br>Upper A-Arm
+__Actuation__|The type of actuation system including:<br>Direct CoilOver<br>Separate Springs/Dampers<br>Push/Pull<br>Torsion Bar<br>MonoShock Rotational<br>MonoShock Slider<br>Push/Pull w/ 3rd Spring<br>Push/Pull w/ 3rd Spring Constrain
+__Actuation Attachment__|The attachment point for the actuation system<br>Upright<br>Lower A-Arm<br>Upper A-Arm
+__Anti-Roll Bar__|Select the type of ARB<br>U-Bar<br>U-Bar Rocker<br>T-Bar<br>T-Bar w/ 3rd Spring
 
 
-##Creating a Suspension
+####*Input Data*
 
+After a suspension has been created, additional suspension parameters can be entered in the Suspension Input Data pane. This pane defines all the input parameters for a given suspension, including the location of the end points for all suspension members, steering geometry properties, wheel and rim information and any non-suspension reference points of your choice, such as center of gravity or lowest bodywork points.
 
+The following figure shows how points are highlighted in ‘red’ in the 3D Visualization when you select a point in the Input Data window.
 
-##Input Data
+![visualization](../img/susvisualization.png)
 
+The location of each point can either be given as a list of semicolon (;) separated x, y, z points (IE – x,y,z) or the input item may be expanded and each x, y, z point entered individually. The values for all points should reflect their location when the car is at static.
 
+NOTE - If you hold down the ‘CTRL’ key and click and hold on a point you can drag it in the 3D visualization window. While dragging the point you can also notice that the coordinates in the Input Window will be instantaneously changing with your mouse movement.
 
-##Modify Suspension
+Alternatively, a suspension point may be double clicked upon in the 3d visualization window – allowing the x, y, z coordinates to be adjusted directly from the visualization pane. The following figure shows this pane.
 
+![coordinate example](../img/suscoordinates.png)
 
+####*Modify Suspension*
 
-##Importing and Exporting
+Modifying suspension geometry allows you to ensure that the geometry created matches that of your car.  This can be done at any point, though it will reset whatever parameters are changed in the input data
 
+![modify sus](../img/modifysus.png)
 
+####*Importing and Exporting*
 
-##Output Data
+Suspension configurations can be imported and exported from the Ribbon Control Bar. Both OptimumKinematics projects and Excel files can be imported, allowing for most assemblies to be used in OptimumDynamics.
 
+####*Output Data*
 
+After the information on the input tab has been completed, the corresponding information regarding the newly create suspension is available under the output tab.
+
+Output channels can be quickly sorted through, via the quick search box. Search results will be displayed if a channel contains the search string anywhere inside the channel name.
+
+![output search](../img/outputsearch.png)
+
+Output items of interest may be ‘pinned’ to the top of the list, ensuring that they are always easier to find.
+
+![output pin](../img/outputpin.png)
 
 ##Simple Differential
 
+The differential divides the drive torque from the engine between the left and right side of the car and/or allows the wheels to spin at different speeds.  The effects of the differential are considered when calculating the net torques being applied on the wheels being driven through the differential.  The two constant state differential types are listed in the table.
 
+__Input Name__|__Description__
+-|-
+__Differential Type__|*Open Differential* – the application of torque is equally split between the left and right wheels.  As a result, the wheel speeds will vary<br>*Spool* – The left and right wheels will have identical angular speed, as a result the torque distribution will vary accordingly while additional slip is created on the inside wheel.
 
 ##Salisbury Differential
 
+If a constant state differential does not represent the design of the vehicle being used, a Salisbury differential can be input.  The Salisbury differential will split the torque between the two wheels based on the input torque, the output torque at the wheels, and the slip ratio between the left and right wheels on the axle.
 
+![salisbury diff](../img/lsddiff.png)
+
+__Input Name__|__Description__
+-|-
+__Ramp Coefficient Brake__|This value is the ratio of locking torque to the input torque when the vehicle has an applied braking/coasting torque
+__Ramp Coefficient Drive__|This value represents the increase in net torque to input torque required to lock the differential under acceleration.
+__Static Preload__|This value is the locking torque required when the input torque is zero.
+__Viscous Coefficient__|Ratio of slip between the left and right wheels required to lock the differential
 
 #Simple Brakes
 
