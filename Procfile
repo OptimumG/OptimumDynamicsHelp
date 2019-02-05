@@ -1,1 +1,1 @@
-web: mkdocs build
+web: mkdocs serve
