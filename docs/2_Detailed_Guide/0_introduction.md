@@ -1,5 +1,5 @@
 ---
-title: Introduction
+Title: Introduction
 ---
 
 #Detailed Guide

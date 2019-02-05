@@ -16,6 +16,7 @@ The help file can be navigated by clicking on the various section links in the d
     * [Understanding Vehicle Design](2_Detailed_Guide/1_Understanding_Vehicle_Design.md)
     * [Simulation](2_Detailed_Guide/2_Simulation.md)
     * [Analysis](2_Detailed_Guide/3_Analysis.md)
+    * [Output Variable Definitions](2_Detailed_Guide/4_Output_Variable_Definitions.md)
 3. Additional Information
     * [Hot Keys and File Types](3_Additional_Information/1_Hot_Keys_and_File_Types.md)
     * [Importing and Exporting Data](3_Additional_Information/2_Importing_Exporting_Data.md)
