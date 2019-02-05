@@ -1,3 +1,7 @@
+---
+title: Simulation
+---
+
 The second stage of an OptimumDynamics project is simulation.  To reach this section, select the Simulation tab in the command ribbon or the project tree. In this section a vehicle setup is created based on the previously defined vehicle model. Input motions, forces and accelerations can be defined and/or imported from an Excel/CSV file. Once a vehicle setup and simulation input are defined then a simulation can be undertaken.
 
 Certain simulation types require a full powertrain model containing an engine, gearbox and differential and/or a full tire model. The table below summarizes the component requirements for the simulation types.

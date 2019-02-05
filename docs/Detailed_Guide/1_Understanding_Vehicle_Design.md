@@ -1,3 +1,7 @@
+---
+title: Understanding Vehicle Design
+---
+
 #Understanding Vehicle Design
 
 Vehicle design covers all the components used in a vehicle setup in OptimumDynamics. In this part of the project, a vehicle is built from its core components into an overall vehicle model that can be used for later simulation and analysis. The following components must be included in an OptimumDynamics vehicle definition if simulation is to be undertaken:

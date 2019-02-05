@@ -1,3 +1,7 @@
+---
+title: Introduction
+---
+
 #Detailed Guide
 
 Now that you have started and have been introduced to the software it is time to start building your project. This guide covers the detailed information necessary to achieve this. The main three processes involved with an OptimumDynamics project are.
