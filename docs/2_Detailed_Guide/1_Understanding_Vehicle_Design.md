@@ -68,7 +68,7 @@ Tire forces are one of the driving components to a vehicle simulation as they ar
 
 This can be approximated from physical testing by knowing the maximum lateral acceleration of the vehicle.  This assumes that there is negligible downforce being applied to the vehicle and a uniform friction coefficient across each tire. If the tires being used on each corner of the vehicle are not identical, then the friction limit will be different for each physical tire model being used.  If this is the case for the vehicle, loading on each of the tires must be known and each individual friction coefficient must be solved for.
 
-![tire fric eq](../img/tirefriceq.png)
+![tire fric eq](../img/tirefriceq.PNG)
 
 Note that this friction limit will be different for each physical tire model being used.  If this is the case for the vehicle, loading on each of the tires must be known.
 
