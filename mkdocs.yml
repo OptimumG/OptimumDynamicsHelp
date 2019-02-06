@@ -23,5 +23,4 @@ nav:
 
 
 theme: 
-  name: readthedocs
-  custom_dir: customtheme
+  name: 'rtd-dropdown'
