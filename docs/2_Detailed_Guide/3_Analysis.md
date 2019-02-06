@@ -156,7 +156,7 @@ The values shown in a table report can be readily copied to the clipboard, for f
 
 Tables are useful for investigating the exact values of parameters during a simulation. The values can be easily compared against other result files by looking across the table row.
 
-![Table](../img/table.png)
+![Table](../img/Table.png)
 
 Adding a table will allow you to see the numerical values at each step in the simulation. Tables also include the following calculated values:
 

@@ -20,4 +20,8 @@ nav:
       - 3D Visualization: 3_Additional_Information/4_3D_Visualization.md
       - FAQ: 3_Additional_Information/5_FAQ.md
 
-theme: readthedocs
+
+
+theme: 
+  name: readthedocs
+  custom_dir: customtheme

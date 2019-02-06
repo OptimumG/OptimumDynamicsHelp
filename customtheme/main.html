@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+{% block title %}
+<title>OptimumDynamics Help File</title>
+{% endblock %}
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+  </head>
+  
+  {% if nav|length>1 %}
+    <ul>
+    {% for nav_item in nav %}
+        {% if nav_item.children %}
+            <li>{{ nav_item.title }}
+                <ul>  
+                {% for nav_item in nav_item.children %}
+                    <li class="{% if nav_item.active%}current{% endif %}">
+                        <li><a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a></li>
+                        <style>
+                        a:link, a:visited {
+                            background-color:navy;
+                            color:white;
+                        }
+                        a:hover, a:active {
+                            background-color:green;
+                            color:white;
+                        }
+                        ul {
+                            list-style-type: none;
+                            margin: 0;
+                            padding:0;
+                            overflow: auto;
+                            offset:0%;
+                            width:25%;
+                            height:100%;
+                            background-color:rgb(3, 9, 41);
+                            border-spacing: 2px;
+                            border-color:rgb(88, 0, 0);
+                            border-style: groove;
+                            position:fixed;
+                            color:whitesmoke;
+                        }
+                        li {
+                            display:block;
+                            offset:40px;
+                            padding: 4px 4px;
+                            color:white;
+                        }
+                        li a {
+                            display:block;
+                            color:white;
+                            padding: 4px 4px;
+                            text-decoration:none;
+                        }
+                        li a.active {
+                            background-color:green;
+                            color:white;
+                        }
+                        li a:hover:not(.active){
+                            background-color:blue;
+                            color:white;
+                            border-style: ridge;
+                            border-color:oldlace;
+                        }
+                        </style>
+                    </li>
+                {% endfor %}
+                </ul>
+            </li>
+        {% else %}
+            <li class="{% if nav_item.active%}current{% endif %}">
+                <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+{% endif %}
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+{% for nav_item.active in nav %}
+    <a href="nav_item.next">Next Page</a>
+    <style>
+    a:link {
+        background-color:grey;
+        color:black;
+        position:absolute;
+        left:100px;
+        top:50px; 
+    }
+    </style>
+{% endfor %}
+  <body>
+      <style>
+      h1 {color:oldlace}
+      h2 {color:oldlace}
+      p {color:oldlace}
+      p {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
+      p {margin: 20px}
+      p {position:-ms-page}
+      body {height:100%}
+      body {background-image:linear-gradient(rgb(0, 0, 66),rgb(0, 0, 0))}
+      body {border-style:ridge}
+      body {border-color:rgb(88, 0, 0)}
+      img {width:95%}
+      </style>
+    {{ page.content }}
+  </body>
+</div>
+<a href="../docs/img/signature.png">OptimumG Vehicle Dynamics Solutions</a>
+    <style>
+    </style>
+
+
+
+</html>
+
+

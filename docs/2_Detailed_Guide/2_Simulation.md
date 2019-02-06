@@ -12,17 +12,23 @@ Certain simulation types require a full powertrain model containing an engine, g
 
 The vehicle setup allows you to combine the different components and assemblies that were previously defined into a single vehicle setup.  The following components must be defined in a vehicle setup. You must select a previously defined:
  
-* Chassis
-* Brakes
-* Front Suspension
-* Rear Suspension
-* Drivetrain
+ __Chassis__
+
+ __Brakes__
+
+ __Front Suspension__
+
+ __Rear Suspension__
+
+ __Drivetrain__
 
 You may also optionally define the following vehicle components:
  
-* Aerodynamics
-* Engine
-* Gearbox
+ __Aerodynamics__
+
+ __Engine__
+
+ __Gearbox__
  
 Additionally, a reference distance must be input for the vehicle.  The reference distance is the distance between the rear suspension plane and the front suspension plane. This is relative to the offset of the tire centerline to the suspension plane.  Below is an image explaining the measurements graphically. For a linear suspension the reference distance is simply the vehicle wheelbase. For a non-linear suspension the reference distance is the distance between the front and rear reference planes and is not necessarily the same value as the wheelbase.
 
