@@ -1,3 +1,7 @@
+---
+Title: Output Variable Definitions
+---
+
 The following output variables can be displayed in OptimumDynamics result and report files. The definitions of each of these are also provided and can be seen within the software when viewing result files only. Depending on the type of simulation and vehicle setup are used some of these variables are not accessible.
 
 
