@@ -21,6 +21,5 @@ nav:
       - FAQ: 3_Additional_Information/5_FAQ.md
 
 
-
-theme: 
-  name: 'rtd-dropdown'
+theme: readthedocs
+site_favicon: OptimumDynamics_512x512.ico

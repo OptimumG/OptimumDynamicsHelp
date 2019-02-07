@@ -6,7 +6,7 @@ title: Starting Parameters
 
 These are intended to be reference values to use if the data for the individual vehicle is not known.  Note that these can vary the accuracy of the simulation and should only be used if there is absolutely no data available for use for the vehicle.
 
-Generic tire friction coefficient
+__Generic tire friction coefficient__
 
     Racing Slick – 1.8
 
@@ -18,7 +18,7 @@ Generic tire friction coefficient
 
     Dirt Tire – 0.2
 
-Common Vehicle Spring Stiffness
+__Common Vehicle Spring Stiffness__
 
     Passenger Sedan (2000-4000 kg) – 20 N/mm
 
@@ -26,28 +26,28 @@ Common Vehicle Spring Stiffness
 
     Aero Racing Car (1000-2000 kg) – 40 N/mm
 
-*Common Chassis Parameters*
+__Common Chassis Parameters__
 
-	* Passenger Car
+	Passenger Car
     
-        * Mass- 2500 kg
+        Mass- 2500 kg
     
-        * Mass Distribution – 54% Front
+        Mass Distribution – 54% Front
     
-        * CG Height – 1 m
-    * Non-Aero Racing Car (mid-engine)
+        CG Height – 1 m
+    Non-Aero Racing Car (mid-engine)
    
-        * Mass – 1500 kg
+        Mass – 1500 kg
    
-        * Mass Distribution – 49% Front
+        Mass Distribution – 49% Front
    
-        * CG Height – 0.65 m
+        CG Height – 0.65 m
    
-    * Aero Racing Car (mid-engine)
+    Aero Racing Car (mid-engine)
    
-        * Mass – 1575 kg
+        Mass – 1575 kg
    
-        * Mass Distribution – 48% Front
+        Mass Distribution – 48% Front
    
-        * CG Height – 0.675m
+        CG Height – 0.675m
 

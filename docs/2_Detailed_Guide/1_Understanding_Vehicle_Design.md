@@ -6,39 +6,39 @@ Title: Understanding Vehicle Design
 
 Vehicle design covers all the components used in a vehicle setup in OptimumDynamics. In this part of the project, a vehicle is built from its core components into an overall vehicle model that can be used for later simulation and analysis. The following components must be included in an OptimumDynamics vehicle definition if simulation is to be undertaken:
  
- __Tire Stiffness__
+* __Tire Stiffness__
 
- __Tire Force Model__
+* __Tire Force Model__
 
- __Tire__
+* __Tire__
 
- __Chassis__
+* __Chassis__
 
- __Spring/Torsion bar__
+* __Spring/Torsion bar__
 
- __Coilover__
+* __Coilover__
 
- __Suspension__
+* __Suspension__
  
- __Brakes__
+* __Brakes__
 
- __Drivetrain__
+* __Drivetrain__
  
 The following components can also be optionally included:
  
- __Anti-roll Bar (ARB)__
+* __Anti-roll Bar (ARB)__
 
- __Bump Stop__
+* __Bump Stop__
 
- __Aerodynamics__
+* __Aerodynamics__
 
- __Center Element__
+* __Center Element__
 
- __Engine__
+* __Engine__
 
- __Gearbox__
+* __Gearbox__
 
- __Differential__
+* __Differential__
  
 These components can be included in various forms of detail depending on the information known. In the vehicle design tab, new components can be defined either from the ribbon menu at the top of the screen or by right-clicking the component folders in the project tree. The following section has been set up to help a user create the fundamental components of a vehicle setup and then expand into the optional components that can be added.   The full list of components with links to the appropriate section is included on the next page.
 
@@ -180,13 +180,13 @@ If the CG location is referenced to the chassis bottom, then the CG height is de
 
 Another feature of the Chassis object is the 3D visualization. The 3D view displays a generic Chassis with the overall and the equivalent corner masses located and labelled. The size of the spheres change depending on the magnitude of the mass specified.
 
-Front Left:
+* Front Left:
 
-Front Right
+* Front Right
 
-Rear Left
+* Rear Left
 
-Rear Right
+* Rear Right
 
 The 3D visualization also works as a component editor. By clicking on any of the circles you will bring up the respective property editors.
 

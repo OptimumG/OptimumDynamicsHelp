@@ -4,27 +4,27 @@ Title: 3D Visualization
 
 At multiple points during the design, simulation and analysis process a 3D visualization is possible. This is possible for the following:
  
-Design - Tire Stiffness
+* Design - Tire Stiffness
 
-Design - Tires
+* Design - Tires
 
-Design - Chassis
+* Design - Chassis
 
-Design - Springs
+* Design - Springs
 
-Design - Bump Stops
+* Design - Bump Stops
 
-Design - Coilovers
+* Design - Coilovers
 
-Design - Suspensions
+* Design - Suspensions
 
-Design - Brakes
+* Design - Brakes
 
-Design - Drivetrain
+* Design - Drivetrain
 
-Simulation - Vehicle Setup
+* Simulation - Vehicle Setup
 
-Results - Result Files
+* Results - Result Files
 
 ![3D Visualization](../img/3dvis.png)
 
