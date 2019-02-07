@@ -5,23 +5,22 @@ title: Hot Keys and File Types
 
 __Icon__|__Name__|__Extension__
 -|-|-
-![Proj File](../img/projfile.png)|Project File|.ODPro
-![Aerofile](../img/aerofile.png)|Aero File|.ODAer
-![ARB File](../img/arbfile.png)|ARB File|.ODArb
-![Brake File](../img/brkfile.png)|Brake File|.ODBra
-![Bump Stop](../img/bstpfile.png)|Bump Stop File|.ODBum
-![Chassis File](../img/chasfile.png)|Chassis File|.ODCha
-![Coil File](../img/coilfile.png)|Coilover File|.ODSpa
-![Diff File](../img/difffile.png)|Differential File|.ODDif
-![DT File](../img/dtfile.png)|Drivetrain File|.ODDri
-![Gearbox File](../img/gbxfile.png)|Gearbox File|.ODGea
-![Engine File](../img/engfile.png)|Engine File|.ODEng
-![Spring File](../img/sprfile.png)|Spring File|.ODSpr
-![Susp File](../img/susfile.png)|Suspension File|.ODSus
-![Tire F File](../img/tforfile.png)|Tire Force File|.ODTfo
-![TS File](../img/tstifffile.png)|Tire Stiffness File|.ODTst
-![Tire File](../img/tirefile.png)|Tire File|.ODTir
-![TBar File](../img/torsfile.png)|Torsion Bar File|.ODTor
+:![Proj File](../img/projfile.png):|:Project File:|:.ODPro:
+:![Aerofile](../img/aerofile.png):|:Aero File:|:.ODAer:
+:![ARB File](../img/arbfile.png):|:ARB File:|:.ODArb:
+:![Brake File](../img/brkfile.png):|:Brake File:|:.ODBra:
+:![Bump Stop](../img/bstpfile.png):|:Bump Stop File:|:.ODBum:
+:![Chassis File](../img/chasfile.png):|:Chassis File:|:.ODCha:
+:![Coil File](../img/coilfile.png):|:Coilover File:|:.ODSpa:
+:![Diff File](../img/difffile.png):|:Differential File:|:.ODDif:
+:![DT File](../img/dtfile.png):|:Drivetrain File:|:.ODDri:
+:![Gearbox File](../img/gbxfile.png):|:Gearbox File:|:.ODGea:
+:![Engine File](../img/engfile.png):|:Engine File:|:.ODEng:
+:![Spring File](../img/sprfile.png):|:Spring File:|:.ODSpr:![Susp File](../img/susfile.png):|:Suspension File:|:.ODSus:
+:![Tire F File](../img/tforfile.png):|:Tire Force File:|:.ODTfo:
+:![TS File](../img/tstifffile.png):|:Tire Stiffness File:|:.ODTst:
+:![Tire File](../img/tirefile.png):|:Tire File:|:.ODTir:
+:![TBar File](../img/torsfile.png):|:Torsion Bar File:|:.ODTor:
 
 __Icon__|__Name__|__Extension__
 -|-|-

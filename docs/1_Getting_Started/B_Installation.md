@@ -19,4 +19,4 @@ The following procedure should be undertaken to successfully install OptimumDyna
 9. Once the installer finishes click __Close__
 10. The program should now be successfully installed, you can run the program from the start menu or from the icon generated on your desktop
 
-If you have any issues during installation, please contact us at software@optimumg.com or by phone at +1 303 752 1562
+If you have any issues during installation, please contact us at [software@optimumg.com](mailto:software@optimumg.com) or by phone at +1 303 752 1562

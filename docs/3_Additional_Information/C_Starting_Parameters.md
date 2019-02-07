@@ -8,46 +8,47 @@ These are intended to be reference values to use if the data for the individual 
 
 __Generic tire friction coefficient__
 
-    Racing Slick – 1.8
+* Racing Slick – 1.8
 
-    Racing Wet – 0.6 
+* Racing Wet – 0.6 
 
-    Passenger Tire – 1.1
+* Passenger Tire – 1.1
 
-    Passenger Tire Wet – 0.5
+* Passenger Tire Wet – 0.5
 
-    Dirt Tire – 0.2
+* Dirt Tire – 0.2
 
 __Common Vehicle Spring Stiffness__
 
-    Passenger Sedan (2000-4000 kg) – 20 N/mm
+* Passenger Sedan (2000-4000 kg) – 20 N/mm
 
-    Non-Aero Racing Car (1000- 2000 kg) – 20 N/mm
+* Non-Aero Racing Car (1000- 2000 kg) – 20 N/mm
 
-    Aero Racing Car (1000-2000 kg) – 40 N/mm
+* Aero Racing Car (1000-2000 kg) – 40 N/mm
 
 __Common Chassis Parameters__
 
-	Passenger Car
+* Passenger Car
     
-        Mass- 2500 kg
+    * Mass- 2500 kg
     
-        Mass Distribution – 54% Front
+    * Mass Distribution – 54% Front
     
-        CG Height – 1 m
-    Non-Aero Racing Car (mid-engine)
+    * CG Height – 1 m
+    
+* Non-Aero Racing Car (mid-engine)
    
-        Mass – 1500 kg
+    * Mass – 1500 kg
    
-        Mass Distribution – 49% Front
+    * Mass Distribution – 49% Front
    
-        CG Height – 0.65 m
+    * CG Height – 0.65 m
    
-    Aero Racing Car (mid-engine)
+* Aero Racing Car (mid-engine)
    
-        Mass – 1575 kg
+    * Mass – 1575 kg
    
-        Mass Distribution – 48% Front
+    * Mass Distribution – 48% Front
    
-        CG Height – 0.675m
+    * CG Height – 0.675m
 
