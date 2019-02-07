@@ -3,7 +3,7 @@
   {# Optional link to the repository #}
   {%- block repo %}
     {%- if config.repo_url %}
-    <ul class="wm-toctree wm-toc-repo">
+    <li class="wm-toctree wm-toc-repo">
       <ul class="wm-toc-li wm-toc-lev1">
       <a class="wm-article-link wm-toc-text" href="{{ config.repo_url }}">
         {%- if config.repo_name == 'GitHub' %}
@@ -13,7 +13,7 @@
         {%- endif %}
         {{ config.repo_name }}
       </a>
-      </ul>
+    </li>
     </ul>
     {%- endif %}
   {%- endblock %}
