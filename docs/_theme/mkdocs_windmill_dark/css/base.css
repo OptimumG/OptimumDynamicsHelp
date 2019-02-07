@@ -21,7 +21,7 @@ body {
  ***********************************************************************/
 
 .navbar {
-  background-color: #21252B;
+  background-color: rgb(0, 87, 150);
   box-shadow: 0 1.5px 3px rgba(0,0,0,.24), 0 3px 8px rgba(0,0,0,.05);
   border: none;
   border-radius: 0px;
@@ -76,7 +76,7 @@ body {
   line-height: 16px;
   vertical-align: middle;
   color:rgba(255, 255, 255, 0);
-  line-height: 40%;
+  line-height: 41%;
   background-image: url(/img/OptimumDynamics.png);
   background-size: 98%;
   padding-bottom: 29px;
@@ -125,7 +125,7 @@ body {
   height: 100%;
   width: 250px;
   z-index: 1;
-  background-color: rgba(33, 37, 43, 1);
+  background-color: rgb(0, 87, 150);
   border-right: 1px none black;
   overflow: auto;
   margin-left: 0px;
@@ -234,7 +234,7 @@ body {
 }
 
 .wm-toctree a, .wm-toctree a:visited, .wm-toctree a:hover, .wm-toctree a:focus {
-  color: rgb(0, 112, 192);
+  color: lightgrey;
   text-decoration: none;
   outline: none;
 }
@@ -246,7 +246,7 @@ body {
 }
 
 span.wm-toc-text {
-    color: rgb(0, 112, 192);
+    color: lightgrey;
 }
 
 .wm-toc-lev1 > .wm-toc-text { padding-left: 14px; }
@@ -266,7 +266,7 @@ span.wm-toc-text {
   content: "\25B6 \FE0E";
   display: inline-block;
   vertical-align: middle;
-  font-size: 8px;
+  font-size: 10px;
   width: 14px;
 }
 
@@ -276,15 +276,22 @@ span.wm-toc-text {
 
 .wm-toc-li.wm-current, .wm-toc-li.wm-current:hover {
   background-color:rgb(0, 112, 192);
-  color: lightgray;
+  color: lightgrey;
+  border: white;
+  border-style: groove;
+  border-width: 1px;
 }
 
 .wm-toc-li:hover {
-  background-color: rgb(21, 24, 27);
+  background-color: rgb(0, 112, 192);
+  border: white;
+  border-style: solid;
+  font-size: 15px;
+  border-width: 1px;
 }
 
 .wm-toc-li.wm-current a {
-  color: lightgray;
+  color: lightgrey;
 }
 
 .wm-toc-li-nested.wm-page-toc {
@@ -298,7 +305,7 @@ span.wm-toc-text {
   content: "\25C4";
   display: inline-block;
   vertical-align: middle;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .wm-page-toc-opener.wm-page-toc-open > .wm-toc-text::after {
@@ -337,7 +344,7 @@ button, .btn, .btn-sm, .btn-xs, .btn-default, #hist-fwd, #hist-back, #wm-toc-but
 
 button:focus, .btn:focus, .btn-sm:focus, .btn-xs:focus, .btn-default:focus, .btn-link:focus, #hist-fwd:focus, #hist-back:focus, #wm-toc-button:focus, #wm-search-go:focus {
   color: rgb(0, 112, 192);
-  background-color: #2C313A;
+  background-color: lightgrey;
   border-color: rgb(0, 112, 192);
 }
 
@@ -484,7 +491,7 @@ code.code-large, .rst-content tt.code-large {
 
 code {
     padding: 2px 5px;
-    background: #31363F;
+    background: lightgrey;
     border: none 1px black;
     color: black;
     white-space: pre-wrap;
@@ -558,16 +565,16 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
 
 /* Custom Additions */
 input#mkdocs-search-query.form-control {
-    background-color: #21252B;
+    background-color: lightgrey;
     color: rgb(0, 112, 192);
     border: 1px solid rgb(0, 112, 192);
 }
 
 .dropdown-menu, .dropdown-menu li {
-    background-color: #21252B;
+    background-color: lightgrey;
 }
 .dropdown-menu li a:hover {
-    background-color: #2C313A;
+    background-color: lightgrey;
 }
 
 a, a:visited, a:hover, a:focus {
