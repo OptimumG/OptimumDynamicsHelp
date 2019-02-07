@@ -17,7 +17,7 @@ The first time OptimumDynamics is used a new project must be created or alternat
 3.	You should give the project a relevant filename and select a location to save it
 4.	Click __Save__
 
-Upon creating a new project, a folder will be created on your hard drive in the selected directory. All the files related to your project will be saved in this project folder. OptimumDynamics separates the project into individual components, this makes importing and exporting between projects much easier. The file formats that are utilized in OptimumDynamics can be found [here](../3_Additional_Information/1_Hot_Keys_and_File_Types.md) 
+Upon creating a new project, a folder will be created on your hard drive in the selected directory. All the files related to your project will be saved in this project folder. OptimumDynamics separates the project into individual components, this makes importing and exporting between projects much easier. The file formats that are utilized in OptimumDynamics can be found [here](../3_Additional_Information/A_Hot_Keys_and_File_Types.md) 
 
 
 #Software Basics
