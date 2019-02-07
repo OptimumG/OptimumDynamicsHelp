@@ -1,12 +1,13 @@
-site_name: OptimumDynamics Help
+site_name: OptimumDynamics Help File
+
 nav:
     - Home: index.md
     - Welcome: welcome.md
     - Getting Started:
-      - Software Requirements: 1_Getting_Started/1_Software_Requirements.md
-      - Installation: 1_Getting_Started/2_Installation.md
-      - Licensing: 1_Getting_Started/3_Licensing.md
-      - Starting a Project: 1_Getting_Started/4_Starting_a_Project.md
+      - Software Requirements: Getting_Started/1_Software_Requirements.md
+      - Installation: Getting_Started/2_Installation.md
+      - Licensing: Getting_Started/3_Licensing.md
+      - Starting a Project: Getting_Started/4_Starting_a_Project.md
     - Detailed Guide:
       - Introduction: 2_Detailed_Guide/0_introduction.md
       - Understanding Vehicle Design: 2_Detailed_Guide/1_Understanding_Vehicle_Design.md
@@ -19,7 +20,6 @@ nav:
       - Starting Parameters: 3_Additional_Information/3_Starting_Parameters.md
       - 3D Visualization: 3_Additional_Information/4_3D_Visualization.md
       - FAQ: 3_Additional_Information/5_FAQ.md
-
 
 theme: 
   name: readthedocs
