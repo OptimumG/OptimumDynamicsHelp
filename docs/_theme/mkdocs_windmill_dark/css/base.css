@@ -12,7 +12,7 @@ dark-code-bg #31363F
 */
 
 body {
-    background-color: lightgray ;
+    background-color: #f5f5ff ;
     color:#282C34;
 }
 
@@ -328,14 +328,12 @@ span.wm-toc-text {
 button, .btn, .btn-sm, .btn-xs, .btn-default, #hist-fwd, #hist-back, #wm-toc-button, #wm-search-go {
     background-color: lightgrey;
     color: rgb(0, 112, 192);
-    border: 1px solid;
 }
 
 .btn-link {
   background-color: lightgrey;
-  border-color: rgb(0, 112, 192);
   /* Compensate for border*/
-  margin: 1px;
+  margin: 0px;
 }
 
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
@@ -346,6 +344,7 @@ button:focus, .btn:focus, .btn-sm:focus, .btn-xs:focus, .btn-default:focus, .btn
   color: rgb(0, 112, 192);
   background-color: lightgrey;
   border-color: rgb(0, 112, 192);
+  border-width:2px;
 }
 
 button:hover, .btn:hover, .btn-sm:hover, .btn-xs:hover, .btn-default:hover, .btn-link:hover, #hist-fwd:hover, #hist-back:hover, #wm-toc-button:hover, #wm-search-go:hover {
