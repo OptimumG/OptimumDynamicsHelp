@@ -139,21 +139,14 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <footer class="col-md-12 wm-page-content">
 {%- block footer %}
   {%- if config.copyright %}<p>{{ config.copyright }}</p>{%- endif %}
-  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj1337/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI.</p>
-  <img src="\img\companylogo.png" alt="OptimumG Vehicle Dyanmics Solutions">
-  <style>
-  img {
-    width:30%;
-  }
-  </style>
+  <img src="\img\companylogo.png" alt="OptimumG Vehicle Dyanmics Solutions" width='30%'>
   {%- endblock %}
 </footer>
 
 </body>
 </html>
 {%- if is_top %}
-<!--
+
 MkDocs version : {{ mkdocs_version }}
 Build Date UTC : {{ build_date_utc }}
--->
 {%- endif %}
