@@ -418,7 +418,7 @@ button:hover, .btn:hover, .btn-sm:hover, .btn-xs:hover, .btn-default:hover, .btn
 }
 
 .search-text > b {
-  color: #000;
+  color: lightgrey;
 }
 
 .wm-search-page {
