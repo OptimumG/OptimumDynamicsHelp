@@ -80,6 +80,20 @@ __Object Names__|Select whether you wish to be asked for a file name before crea
 __File Properties__|Here you can choose whether to display File properties such as ‘date created’, ‘created by’ etc. in the object documents.
 __3D Visualization__|Here you can select the type of vehicle you would like for visual display.
 
+#Quick Access Toolbar
+
+The quick access toolbar provides the user with a range of commonly used functions that can be set up to be used without the need of going through several menus.  Options are accessed by right clicking on an element in the command ribbon.  There is no limit to the number of elements listed in the quick access toolbar.  Below are the options for each component that can be used
+
+__File__|__Libraries__
+-|-
+__Aerodynamics__|__Brakes__
+__Chassis__|__Powertrains__
+__Suspensions__|__Tires__
+__Vehicle Setup__|__Simulations__
+__Simulation Inputs__|__Reports__
+__Results__|__Track Maps__
+__Math__|__View__
+__Worksheet__|-
 
 #Vehicle Conventions
 
