@@ -327,7 +327,7 @@ __Center Element Motion Ratio (Optional)__|This value represents the ratio of wh
 __Static Roll Center Height__|This is the height of the roll center as referenced from the vehicle ground plane (the vehicle is stationary on the ground).
 __Anti-Effect Percentage__|This value represents the percentage of longitudinal weight transfer that will be geometric. The higher this value is the less suspension travel there will be.
 __Steering – Wheel Displacement__|This value is used to determine how far the wheel travels up or down when the steering wheel is turned. A positive value indicates that the inside wheel center will move down
-__Steering Ratio__|This is the ratio of the steering angle to the wheel angle (steering angle/wheel angle)
+__Steering Ratio__|This is the ratio of the steering angle to the wheel angle (steering angle/steering wheel angle)
 
 #Non Linear Suspension
 
