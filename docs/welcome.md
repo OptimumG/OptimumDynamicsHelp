@@ -19,8 +19,8 @@ The help file can be navigated by clicking on the various section links in the d
     * [Analysis](2_Detailed_Guide/D_Analysis.md)
     * [Output Variable Definitions](2_Detailed_Guide/E_Output_Variable_Definitions.md)
 3. Additional Information
-    * [Hot Keys and File Types](3_Additional_Information/A_Hot_Keys_and_File_Types.md)
-    * [Importing and Exporting Data](3_Additional_Information/B_Importing_Exporting_Data.md)
-    * [Starting Parameters](3_Additional_Information/C_Starting_Parameters.md)
-    * [3D Visualization](3_Additional_Information/D_3D_Visualization.md)
-    * [FAQ](3_Additional_Information/E_FAQ.md)
+    * [Hot Keys and File Types](Additional_Information/Hot_Keys_and_File_Types.md)
+    * [Importing and Exporting Data](Additional_Information/Importing_Exporting_Data.md)
+    * [Starting Parameters](Additional_Information/C_Starting_Parameters.md)
+    * [3D Visualization](Additional_Information/3D_Visualization.md)
+    * [FAQ](Additional_Information/FAQ.md)
