@@ -13,7 +13,7 @@ The help file can be navigated by clicking on the various section links in the d
     * [Licensing](1_Getting_Started/C_Licensing.md)
     * [Starting a Project](1_Getting_Started/D_Starting_a_Project.md)
 2. Detailed Guide
-    * [Introduction](2_Detailed_Guide/A_introduction.md)
+    * [Introduction](2_Detailed_Guide/A_Introduction.md)
     * [Understanding Vehicle Design](2_Detailed_Guide/B_Understanding_Vehicle_Design.md)
     * [Simulation](2_Detailed_Guide/C_Simulation.md)
     * [Analysis](2_Detailed_Guide/D_Analysis.md)
