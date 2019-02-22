@@ -8,10 +8,10 @@ OptimumDynamics is a continually evolving program and we give high regard to any
 The help file can be navigated by clicking on the various section links in the document. At the bottom of each sub-section there is also a link that will bring you back to the beginning of that section. If you are new to OptimumDynamics then you should start by reading through the getting started guide.
 
 1. Getting Started
-    * [Software Requirements](1_Getting_Started/A_Software_Requirements.md)
-    * [Installation](1_Getting_Started/B_Installation.md)
-    * [Licensing](1_Getting_Started/C_Licensing.md)
-    * [Starting a Project](1_Getting_Started/D_Starting_a_Project.md)
+    * [Software Requirements](Getting_Started/Software_Requirements.md)
+    * [Installation](Getting_Started/Installation.md)
+    * [Licensing](Getting_Started/Licensing.md)
+    * [Starting a Project](Getting_Started/Starting_a_Project.md)
 2. Detailed Guide
     * [Introduction](2_Detailed_Guide/A_Introduction.md)
     * [Understanding Vehicle Design](2_Detailed_Guide/B_Understanding_Vehicle_Design.md)
