@@ -174,15 +174,17 @@ Most other data analysis software can also be used.  To create the logged file, 
 
 ![Motec Export](../img/motecexport.png)
 
-Once the data is exported to a compatible file, select the import button under the acceleration tab to import the data.  After selecting the file, select the data that correlates with each required input listed above.  The data can be selected by either double clicking on the row that corresponds to the data, by clicking and dragging on the data desired, or by using the key strokes like the inputs used in Excel.  If there is more data within the file that is not being used, the double click method will incorporate these values as well.  If this is the preferred import method, delete the excess points before importing the data to OptimumDynamics.
+Once the data is exported to a compatible file, select the import button under the acceleration tab to import the data. After selecting the file, select the data that correlates with each required input listed above. The data can be selected by either double clicking on the column   that corresponds to the data, by clicking and dragging on the data desired, or by the key sequence Ctrl + Shift + Down Arrow. If there is more data within the file that is not being used (such as a file header, double clicking on the row will incorporate those values too. If this is the preferred import method, delete the excess points before importing the data to OptimumDynamics. 
 
 ![OD Track Import](../img/odtrackimport.png)
 
-Additional inputs can be added that can be used for validation of the simulations by selecting the add channel button on the left-hand side of the window.  The channels added at this point can be accessed in the post processing tools for any of the simulations using this input file.   Once the data is set, click okay and OptimumDynamics will create a multiple point acceleration plot.  To see the calculated course, click on the __Track Map__ tab on the bottom of the __Document Manager__.
-
-![OD Track Output](../img/trackoutput.png)
+Additional inputs can be added that can be used for validation of the simulations by selecting the add channel button on the left-hand side of the window. The channels added at this point can be accessed in the post processing tools for any of the simulations using this input file.  
 
 If the format for the input data is carried over for several files, a __template__ can be created for the software.  To create a template, start by typing a name for the template in the top text box.  Select the rows and columns from the file, and select the save template button.  A prompt will come up asking to adjust the row count depending on the size of the file input.  The software will now automatically select the columns for each input if the template is selected.
+
+Once the data for the inputs are selected, click okay and OptimumDynamics will create a multiple state acceleration  input file. To see the generated  course, click on the __Track Map__ tab on the bottom of the __Document Manager__. By default, the track will be an open loop. It can be closed by selecting the __Close Track__ option along the top of the __Document Manager__. 
+
+![OD Track Output](../img/trackoutput.png)
 
 To improve simulation time, the step size can be shortened in the input portion of the __Document Manager__.  OptimumDynamics will automatically simplify the steps to best represent the motion of the vehicle.  Reducing the step size does remove some of the accuracy of the measured, but for most instances a step size under 500 will be a good compromise of simulation time and accuracy.
 
