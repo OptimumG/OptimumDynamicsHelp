@@ -42,3 +42,4 @@ Please refer to [vehicle conventions](../1_Getting_Started/D_Starting_a_Project.
 
 If you have a high resolution, high DPI display, Microsoft Windows will automatically scale the user interface to correspond to the scaling set in your display settings. Consequently, this causes the OptimumDynamics UI to appear blurry. You can disable DPI scaling by going into the OptimumDynamics shortcut properties and selecting the ‘Disable display scaling on high DPI settings’ option in the compatibility tab.
 
+
