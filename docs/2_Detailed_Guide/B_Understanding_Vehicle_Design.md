@@ -383,6 +383,12 @@ Alternatively, a suspension point may be double clicked upon in the 3d visualiza
 
 ![coordinate example](../img/suscoordinates.png)
 
+When creating the suspension, the full droop and the full compression can either be automatically defined by the simulation or by a manual input set.  The automatic motion defines the full droop of the suspension as the fully extended length of the coilover.  The compressed length is then defined as the damper fully compressed length.  Uniform steps are then created across the motion to create the suspension motion lookup table.
+
+![manual grid](../img/manual_grid.PNG)
+
+When the manual grid is selected, options are available to create the steering range, the number of steps in the steering motion, the number of steps in the wheel displacement, and the displacement of the suspension from full droop.  The manual mode will still use the fully extended length of the suspension, but will now have a manually defined point in which it will compress to.
+
 ####*Modify Suspension*
 
 Modifying suspension geometry allows you to ensure that the geometry created matches that of your car.  This can be done at any point, though it will reset whatever parameters are changed in the input data
