@@ -36,7 +36,7 @@ Ensure that the coilover has the correct dimensions. The coilover must be able t
 
 ##What coordinate system is being used in OptimumDynamics?
 
-Please refer to the [vehicle conventions](../1_Getting_Started/D_Starting_a_Project.md) for an explanation of the coordinate system and direction being used in OptimumDynamics. 
+Please refer to the [vehicle conventions](../1_Getting_Started/D_Starting_a_Project.md) for an explanation of the coordinate system and direction being used in OptimumDynamics.
 
 ##Why is the text blurry in OptimumDynamics?
 
